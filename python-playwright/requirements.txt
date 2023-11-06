@@ -1,3 +1,4 @@
 pytest-playwright
 playwright~=1.39.0
 Faker~=19.13.0
+toml~=0.10.2

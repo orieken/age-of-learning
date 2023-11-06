@@ -5,11 +5,8 @@ class RegistrationPage(BasePage):
     email_error_message_text = ("Error - Please enter a valid email address. "
                                 "It is a required field and must be filled in.")
 
-    def __init__(self, page):
-        super().__init__(page)
-
-    def navigate_to(self):
-        self.page.goto("https://www.abcmouse.com/abc/prospect-register/")
+    def __init__(self, page, url):
+        super().__init__(page, url)
 
     def become_a_member_message(self):
         return self.page.get_by_role("heading", name="Become a Member!")
