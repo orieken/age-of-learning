@@ -2,12 +2,12 @@ from abcmouse.base.page import Page
 
 
 class RegistrationPage(Page):
-    def __init__(self, driver, url='https://www.abcmouse.com/abc/prospect-register/'):
+    def __init__(self, driver, url):
         super().__init__(driver, url)
 
     def email(self):
         locator = [
-            'return document.querySelector(\"body > route-view\")',
+            'document.querySelector(\"body > route-view\")',
             '.shadowRoot.querySelector(\"#page-component\")',
             '.shadowRoot.querySelector(\"#email\")'
         ]
@@ -15,7 +15,7 @@ class RegistrationPage(Page):
 
     def email_error_message(self):
         locator = [
-            'return document.querySelector(\"body > route-view\")',
+            'document.querySelector(\"body > route-view\")',
             '.shadowRoot.querySelector(\"#page-component\")',
             '.shadowRoot.querySelector(\"#email-error-message\")'
         ]
@@ -23,7 +23,7 @@ class RegistrationPage(Page):
 
     def submit(self):
         locator = [
-            'return document.querySelector(\"body > route-view\")',
+            'document.querySelector(\"body > route-view\")',
             '.shadowRoot.querySelector(\"#page-component\")',
             '.shadowRoot.querySelector(\"#submit-button\")'
         ]

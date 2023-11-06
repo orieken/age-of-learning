@@ -3,7 +3,7 @@ from abcmouse.mouse import Mouse
 
 
 def test_landing_page_signup_should_be_displayed(browser):
-    abcmouse = Mouse(browser, "https://www.abcmouse.com/")
+    abcmouse = Mouse(browser)
     # // wait for the page to load
     abcmouse.navigate_to()
     # // wait for 3 seconds

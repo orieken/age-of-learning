@@ -2,12 +2,12 @@ from abcmouse.base.page import Page
 
 
 class LandingPage(Page):
-    def __init__(self, driver):
-        super().__init__(driver)
+    def __init__(self, driver, url):
+        super().__init__(driver, url)
 
     def signup(self):
         locator = [
-            'return document',
+            'document',
             '.querySelector(\"body > route-view\")',
             '.shadowRoot.querySelector(\"#page-component\")',
             '.shadowRoot.querySelector(\"main-layout > header > home-header '

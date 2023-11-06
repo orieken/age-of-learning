@@ -1,0 +1,5 @@
+[urls]
+base_url = "https://www.abcmouse.com/"
+landing_page = "https://www.abcmouse.com/"
+registration_page = "https://www.abcmouse.com/abc/prospect-register/"
+subscription_page = "https://www.abcmouse.com/abc/subscription/"
