@@ -2,7 +2,6 @@ from abcmouse.factories.user_factory import UserFactory
 from abcmouse.mouse import Mouse
 
 
-
 def test_submit_with_no_email_displays_error_message(browser):
     abcmouse = Mouse(browser, "https://www.abcmouse.com/")
     abcmouse.navigate_to()
@@ -38,4 +37,4 @@ def test_become_a_member_message_is_displayed(browser):
     registration_page = abmouse.registration_page
     registration_page.navigate_to()
     registration_page.wait(5)
-    assert registration_page.become_a_member_message().text == 'Become a Member!'
+    assert registration_page.become_a_member_message().text == 'Become a Member'
